@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<form action="/websiteanalysis/add/" method="post"> <!-- 将http这修改为后台地址  method get/post 与后台的要一致 -->
+{% csrf_token %}
+<input type="text" name='text'> <!-- 这里就收参数name要与后台一致 -->
+ 
+<input type="submit">
+</form>
+</body>
+</html>
